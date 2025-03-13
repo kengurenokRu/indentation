@@ -45,13 +45,13 @@ button {
     background-color: transparent;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
     padding: 0;
     margin: 0;
 }
@@ -91,8 +91,10 @@ blockquote {
 
 .container2 {
     max-width: 1200px;
-    padding: 0 30px;
+    padding: 25px 30px;
     margin: 0 auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 
 .section {
@@ -102,10 +104,10 @@ blockquote {
 .subtitle {
     font-weight: 900;
     font-size: 36px;
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
+    padding-left: 15px;
 }
 
-.text:not(:last-of-type)
-{
+.text:not(:last-of-type) {
     padding-bottom: 30px;
 }

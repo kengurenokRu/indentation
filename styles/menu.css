@@ -1,0 +1,12 @@
+.menu {
+    margin: 0;
+}
+
+.header__text-item,
+.header__item {
+    color: #02535f;
+}
+
+.header__list {
+    padding-left: 30px;
+}
