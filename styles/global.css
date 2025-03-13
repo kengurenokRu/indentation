@@ -89,6 +89,12 @@ blockquote {
     margin: 0 auto;
 }
 
+.container2 {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
 .section {
     padding: 50px 0;
 }
@@ -97,4 +103,9 @@ blockquote {
     font-weight: 900;
     font-size: 36px;
     margin-bottom: 30px;    
+}
+
+.text:not(:last-of-type)
+{
+    padding-bottom: 30px;
 }
