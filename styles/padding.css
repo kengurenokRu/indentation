@@ -1,0 +1,22 @@
+.padding__list {
+    margin-bottom: 30px;
+}
+
+.padding__item {
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.padding__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.padding__item:before {
+    content: "—";
+    position: relative;
+    left: -5px;
+}
+
+.padding__text{
+    padding-left: 15px;
+}
