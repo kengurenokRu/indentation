@@ -1,12 +1,12 @@
 .menu {
-    margin: 0 0 25px 0;
+    margin: 0 auto 25px auto;
 }
 
-.header__text-item,
-.header__item {
+.menu__text-item,
+.menu__item {
     color: #02535f;
 }
 
-.header__list {
+.menu__list {
     padding-left: 30px;
 }
