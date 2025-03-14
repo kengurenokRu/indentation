@@ -82,43 +82,43 @@
         </section>
         <section class="section section2" id="block2">
             <div class="container">
-                <h3>Отступ задается последнему возможному элементу в DOM-дереве</h3>
-                <p>Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на
+                <h3 class="subtitle-mini section2__header">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+                <p class="text section2__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на
                     этот список:</p>
-                <img src="./assets/image/example list.jpg" alt="html-код списка">
-                <img src="./assets/image/visual list.jpg" alt="Визуальный пример списка">
-                <p>Отступ делают за счёт соседних элементов, а не дочерних:</p>
-                <figure>
-                    <img src="./assets/image/list dev tools.jpg" alt="Отображение списка и кола в DevTools">
-                    <figcaption>
+                <img class = "img section2__img" src="./assets/image/example list.jpg" alt="html-код списка">
+                <img class = "img section2__img" src="./assets/image/visual list.jpg" alt="Визуальный пример списка">
+                <p class="text section2__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+                <figure class="section2__block">
+                    <img class = "section2__img-block" src="./assets/image/list dev tools.jpg" alt="Отображение списка и кола в DevTools">
+                    <figcaption class = "section2__text-block">
                         <strog>ВАЖНО:</strog> здесь <em>.list-item</em> — последний возможный элемент в котором мы
                         задаём
                         отступ, чтобы разделить списки.
                     </figcaption>
                 </figure>
-                <p>Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для
+                <p class="text section2__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для
                     достижения той
                     же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
-                <p>Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-                <img src="./assets/image/nesting.jpg" alt="Пример уровней вложенности">
-                <p>В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>.
+                <p class="text section2__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+                <img class = "img section2__img" src="./assets/image/nesting.jpg" alt="Пример уровней вложенности">
+                <p class="text section2__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>.
                     Именно
                     для него задается padding-top, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>,
                     которые стоят по умолчанию необходимо обнулить.</p>
-                <img src="./assets/image/list2.jpg" alt="Пример правильного задания отступа сверху">
-                <p>Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать
+                <img class = "img section2__img" src="./assets/image/list2.jpg" alt="Пример правильного задания отступа сверху">
+                <p class="text section2__text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать
                     после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки
                     с
                     нестандартной структурой отступов.</p>
         </section>
         <section class="section section3" id="block3">
             <div class="container">
-                <h3>Для последнего элемента группы отступ всегда обнуляется</h3>
-                <p>Для наглядности возьмём наш предыдущий пример с рецептами</p>
-                <p>Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
+                <h3 class="subtitle-mini section3__header">Для последнего элемента группы отступ всегда обнуляется</h3>
+                <p class="text section3__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+                <p class="text section3__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
                 </p>
-                <img src="./assets/image/padding header.jpg" alt="Пример списка с рецептами">
-                <p>В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся
+                <img class = "img section3__img" src="./assets/image/padding header.jpg" alt="Пример списка с рецептами">
+                <p class="text section3__text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся
                     через
                     <i>padding</i>
                     для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние
@@ -126,18 +126,18 @@
                     секциями
                     100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
                 </p>
-                <img src="./assets/image/padding list.jpg"
+                <img class = "img section3__img" src="./assets/image/padding list.jpg"
                     alt="Визуальное отображение списка с рецептами через dev tools с margin">
-                <img src="./assets/image/section.jpg" alt="html-код списка с рецептами">
-                <img src="./assets/image/section2.jpg" alt="html-код списка с рецептами">
-                <p>Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-                <img src="./assets/image/menu.jpg" alt="Пример меню">
-                <img src="./assets/image/html menu.jpg" alt="html-код меню">
-                <p>Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами
+                <img class = "img section3__img section3__img_no-margin" src="./assets/image/section.jpg" alt="html-код списка с рецептами">
+                <img class = "img section3__img" src="./assets/image/section2.jpg" alt="html-код списка с рецептами">
+                <p class="text section3__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+                <img class = "img section3__img" src="./assets/image/menu.jpg" alt="Пример меню">
+                <img class = "img section3__img" src="./assets/image/html menu.jpg" alt="html-код меню">
+                <p class="text section3__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами
                     меню задаются так:</p>
-                <img src="./assets/image/margin menu.jpg" alt="css-код отступа">
-                <p>Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-                <img src="./assets/image/margin menu psevdo.jpg" alt="css-код отступа с помощью псевдоклассов">
+                <img class = "img section3__img" src="./assets/image/margin menu.jpg" alt="css-код отступа">
+                <p class="text section3__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+                <img class = "img section3__img" src="./assets/image/margin menu psevdo.jpg" alt="css-код отступа с помощью псевдоклассов">
         </section>
         </div>
     </main>
