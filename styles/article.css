@@ -1,0 +1,140 @@
+.article__container {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.article__container2 {
+  max-width: 1140px;
+  padding: 25px 30px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.article__subtitle {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+
+.article__subtitle-mini {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.article__text:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.article__text_margin {
+  margin-bottom: 50px;
+}
+
+.article {
+  padding: 60px 0 50px 0;
+}
+
+.article__title {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.article__menu {
+  margin: 0 auto 25px auto;
+}
+
+.article__text-item,
+.article__item {
+  color: #02535f;
+}
+
+.article__list {
+  padding-left: 30px;
+}
+
+.article__img-block {
+  max-width: 560px;
+  object-fit: fill;
+}
+
+.article__text-block {
+  max-width: 480px;
+}
+
+.article__block_inline {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.article__block_margin-right {
+  margin-right: 30px;
+}
+
+.article__text-image-block {
+  margin-bottom: 30px;
+}
+
+.article__paragraph {
+  margin-bottom: 50px;
+}
+
+.article__block {
+  margin-bottom: 30px;
+  border: 1px solid #000;
+}
+
+.article__img {
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article__img_no-margin {
+  margin-bottom: 0;
+}
+
+.article__text:last-of-type {
+  margin-bottom: 30px;
+}
+
+.article__img:last-of-type {
+  margin-bottom: 0;
+}
+
+.article__img_margin {
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article__text_grey {
+  color: #5e5e5e;
+}
+
+.article__text_margins {
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.article__list-footer {
+  margin-bottom: 30px;
+}
+
+.article__item-footer {
+  padding-left: 15px;
+  margin-bottom: 5px;
+}
+
+.article__item-footer:last-of-type {
+  margin-bottom: 0;
+}
+
+.article__item-footer:before {
+  content: "—";
+  position: relative;
+  left: -5px;
+}

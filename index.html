@@ -9,121 +9,130 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">Отступы в вёрстке: margin и padding</h1>
-                <p class="text header__text">В этой статье я рассмотрю самые популярные "стандартные" решения для
-                    сохранения
-                    смысла и хорошей
-                    читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они
-                    сильно
-                    влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в
-                    любую его часть. При этом другие части кода продолжат нормально работать.</p>
-                <p class="text header__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и
-                    выйти за
-                    их пределы. Эти
-                    знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных
-                    верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-            </div>
-        </header>
-        <nav class="container2 menu">
-            <h2 class="subtitle menu__subtitle">Содержание:</h2>
-            <ol class="menu__list">
-                <li class="menu__item"><a class="menu__text-item" href="#block1">Отступ задается от
-                        предыдущего
-                        элемента к следующему</a></li>
-                <li class="menu__item"><a class="menu__text-item" href="#block2">Отступ задается последнему
-                        возможному элементу в DOM-дереве</a></li>
-                <li class="menu__item"><a class="menu__text-item" href="#block3">Для последнего элемента
-                        группы
-                        отступ обнуляется</a></li>
-            </ol>
-        </nav>
-        <main class="main">
-            <section class="section section1" id="block1">
-                <div class="container">
-                    <h3 class="subtitle-mini section1__header">Отступ задается от предыдущего элемента к следующему: от
-                        первого ко второму, сверху вниз, слева
-                        направо.
+    <article class="article">
+        <div class="article__container">
+            <h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
+            <p class="article__text">В этой статье я рассмотрю самые популярные "стандартные" решения для
+                сохранения
+                смысла и хорошей
+                читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они
+                сильно
+                влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в
+                любую его часть. При этом другие части кода продолжат нормально работать.</p>
+            <p class="article__text article__text_margin">Как это часто бывает, знание базовых принципов поможет
+                проявить гибкость и
+                выйти за
+                их пределы. Эти
+                знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных
+                верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+        </div>
+        <section>
+            <nav class="article__menu article__container2">
+                <h2 class="article__subtitle">Содержание:</h2>
+                <ol class="article__list">
+                    <li class="article__item"><a class="article__text-item" href="#about-margin">Отступ задается от
+                            предыдущего
+                            элемента к следующему</a></li>
+                    <li class="article__item"><a class="article__text-item" href="#margin-last">Отступ задается
+                            последнему
+                            возможному элементу в DOM-дереве</a></li>
+                    <li class="article__item"><a class="article__text-item" href="#margin-reset">Для последнего элемента
+                            группы
+                            отступ обнуляется</a></li>
+                </ol>
+            </nav>
+            <article class="article__paragraph" id="about-margin">
+                <div class="article__container">
+                    <h3 class="article__subtitle-mini">Отступ задается от предыдущего элемента к следующему: от
+                        первого ко второму, сверху вниз, слева направо.
                     </h3>
-                    <img class="section1__img section1__block_inline" src="./assets/image/margin.jpg"
-                        alt="Пример правильных margin">
-                    <div class="section1__block section1__block_inline">
-                        <p class="text section1__text"><strong>ВАЖНО:</strong> margin всегда задают от предыдущего
-                            элемента
-                            к следующему.</p>
-                        <p class="text section1__text">Свойство <i>margin</i> необходимо только для того, чтобы
-                            отодвинуть
-                            своего соседа справа или
-                            снизу,
-                            поэтому используется margin-right и margin-bottom.</p>
-                        <p class="text section1__text">(!) Свойства <em>margin-left</em> и <em>margin-top</em>
-                            используются
-                            крайне редко.</p>
-                        <p class="text section1__text">Для <i>padding</i> верно обратное. Исключением является его
-                            применения в декоративных целях,
-                            например, для увеличения области ссылки.</p>
-                    </div>
-                    <div class="section1__block section1__block_inline">
-                        <p class="text section1__text">Отступ внутри блока сверху или слева реализуется через
-                            <i>padding-top</i> и <i>padding-left</i>
-                            родителя.
-                        </p>
-                        <p class="text section1__text">Отступы, как правило, делают в направлении от предыдущего
-                            элемента к
-                            следующему. Так элемент не
-                            будет
-                            толкать сам себя.</p>
-                        <p class="text section1__text">Изначально элемент статичен, а его положение может меняться
-                            только
-                            под воздействием свойств
-                            других
-                            блоков или свойств родителя.</p>
-                    </div>
-                    <img class="section1__img section1__block_inline" src="./assets/image/padding.jpg"
-                        alt="Пример padding">
+                    <figure class="article__text-image-block">
+                        <img class="article__img-block article__block_inline article__block_margin-right"
+                            src="./assets/image/margin.jpg" alt="Пример правильных margin">
+                        <figcaption class="article__text-block article__block_inline">
+                            <p class="article__text"><strong>ВАЖНО:</strong> margin всегда задают от предыдущего
+                                элемента
+                                к следующему.</p>
+                            <p class="article__text">Свойство <i>margin</i> необходимо только для того, чтобы
+                                отодвинуть
+                                своего соседа справа или
+                                снизу,
+                                поэтому используется margin-right и margin-bottom.</p>
+                            <p class="article__text">(!) Свойства <em>margin-left</em> и <em>margin-top</em>
+                                используются
+                                крайне редко.</p>
+                            <p class="article__text">Для <i>padding</i> верно обратное. Исключением является его
+                                применения в декоративных целях,
+                                например, для увеличения области ссылки.</p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <figcaption class="article__text-block article__block_inline article__block_margin-right">
+                            <p class="article__text">Отступ внутри блока сверху или слева реализуется через
+                                <i>padding-top</i> и <i>padding-left</i>
+                                родителя.
+                            </p>
+                            <p class="article__text">Отступы, как правило, делают в направлении от предыдущего
+                                элемента к
+                                следующему. Так элемент не
+                                будет
+                                толкать сам себя.</p>
+                            <p class="article__text">Изначально элемент статичен, а его положение может меняться
+                                только
+                                под воздействием свойств
+                                других
+                                блоков или свойств родителя.</p>
+                        </figcaption>
+                        <img class="article__img-block article__block_inline" src="./assets/image/padding.jpg"
+                            alt="Пример padding">
+                    </figure>
                 </div>
-            </section>
-            <section class="section section2" id="block2">
-                <div class="container">
-                    <h3 class="subtitle-mini section2__header">Отступ задается последнему возможному элементу в
+            </article>
+            <article class="article__paragraph" id="margin-last">
+                <div class="article__container">
+                    <h3 class="article__subtitle-mini">Отступ задается последнему возможному элементу в
                         DOM-дереве
                     </h3>
-                    <p class="text section2__text">Вообще, margin задают исключительно между соседними элементами
-                        DOM-дерева. Для примера, посмотрите на
-                        этот список:</p>
-                    <img class="img section2__img" src="./assets/image/example-list.jpg" alt="html-код списка">
-                    <img class="img section2__img" src="./assets/image/visual-list.jpg" alt="Визуальный пример списка">
-                    <p class="text section2__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-                    <figure class="section2__block">
-                        <img class="section2__img-block" src="./assets/image/list-dev-tools.jpg"
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Вообще, margin задают исключительно между соседними элементами
+                            DOM-дерева. Для примера, посмотрите на
+                            этот список:</figcaption>
+                        <img class="article__img" src="./assets/image/example-list.jpg" alt="html-код списка">
+                        <img class="article__img" src="./assets/image/visual-list.jpg" alt="Визуальный пример списка">
+                    </figure>
+                    <p class="article__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+                    <figure class="article__text-image-block article__block">
+                        <img class="article__img_margin" src="./assets/image/list-dev-tools.jpg"
                             alt="Отображение списка и кола в DevTools">
-                        <figcaption class="section2__text-block">
+                        <figcaption class="article__text_grey article__text_margins">
                             <b>ВАЖНО:</b> здесь <em>.list-item</em> — последний возможный элемент в котором мы
                             задаём
                             отступ, чтобы разделить списки.
                         </figcaption>
                     </figure>
-                    <p class="text section2__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
-                        обёртке
-                        <i>&lt;article&gt;</i> для
-                        достижения той
+                    <p class="article__text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо
+                        обёртке <i>&lt;article&gt;</i> для достижения той
                         же цели. Внешне останется все точно также, но так делать не рекомендуется.
                     </p>
-                    <p class="text section2__text">Предыдущий пример был достаточно простым, но бывает вложенность
-                        значительно больше.</p>
-                    <img class="img section2__img" src="./assets/image/nesting.jpg" alt="Пример уровней вложенности">
-                    <p class="text section2__text">В случае с заголовком, если ему необходим отступ сверху, последним
-                        элементом будет <i>section</i>.
-                        Именно
-                        для него задается padding-top, а не <i>div</i> с классом <i>container</i>. Свойства
-                        <i>margin</i>,
-                        которые стоят по умолчанию необходимо обнулить.
-                    </p>
-                    <img class="img section2__img" src="./assets/image/list2.jpg"
-                        alt="Пример правильного задания отступа сверху">
-                    <p class="text section2__text">Это необходимо для более простого поиска отступов в будущем — для вас
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Предыдущий пример был достаточно простым, но бывает
+                            вложенность
+                            значительно больше.</figcaption>
+                        <img class="article__img" src="./assets/image/nesting.jpg" alt="Пример уровней вложенности">
+                    </figure>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">В случае с заголовком, если ему необходим отступ сверху,
+                            последним
+                            элементом будет <i>section</i>.
+                            Именно
+                            для него задается padding-top, а не <i>div</i> с классом <i>container</i>. Свойства
+                            <i>margin</i>,
+                            которые стоят по умолчанию необходимо обнулить.
+                        </figcaption>
+                        <img class="article__img" src="./assets/image/list2.jpg"
+                            alt="Пример правильного задания отступа сверху">
+                    </figure>
+                    <p>Это необходимо для более простого поиска отступов в будущем — для вас
                         или
                         того, кто будет верстать
                         после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе
@@ -131,65 +140,77 @@
                         с
                         нестандартной структурой отступов.</p>
                 </div>
-            </section>
-            <section class="section section3" id="block3">
-                <div class="container">
-                    <h3 class="subtitle-mini section3__header">Для последнего элемента группы отступ всегда обнуляется
+            </article>
+            <article class="article__paragraph" id="margin-reset">
+                <div class="article__container">
+                    <h3 class="article__subtitle-mini">Для последнего элемента группы отступ всегда обнуляется
                     </h3>
-                    <p class="text section3__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-                    <p class="text section3__text">Между рецептами расстояние одинаковое. Можно заметить, что и до
-                        следующего блока расстояние такое же.
-                    </p>
-                    <img class="img section3__img" src="./assets/image/padding-header.jpg"
-                        alt="Пример списка с рецептами">
-                    <p class="text section3__text">В соответствии со вторым принципом: последний <i>margin</i>
-                        обнуляется, а
-                        нижний отступ задаётся
-                        через
-                        <i>padding</i>
-                        для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние
-                        между
-                        секциями
-                        100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
-                    </p>
-                    <img class="img section3__img" src="./assets/image/padding-list.jpg"
-                        alt="Визуальное отображение списка с рецептами через dev tools с margin">
-                    <img class="img section3__img section3__img_no-margin" src="./assets/image/section.jpg"
-                        alt="html-код списка с рецептами">
-                    <img class="img section3__img" src="./assets/image/section2.jpg" alt="html-код списка с рецептами">
-                    <p class="text section3__text">Для большего понимания рассмотрим другой пример, который часто
-                        встречается на практике:</p>
-                    <img class="img section3__img" src="./assets/image/menu.jpg" alt="Пример меню">
-                    <img class="img section3__img" src="./assets/image/html-menu.jpg" alt="html-код меню">
-                    <p class="text section3__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой
-                        поиска. Отступы между пунктами
-                        меню задаются так:</p>
-                    <img class="img section3__img" src="./assets/image/margin-menu.jpg" alt="css-код отступа">
-                    <p class="text section3__text">Советую использовать псевдоклассы :last-child чаще других, например
-                        так:
-                    </p>
-                    <img class="img section3__img" src="./assets/image/margin-menu-psevdo.jpg"
-                        alt="css-код отступа с помощью псевдоклассов">
+                    <p class="article__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Между рецептами расстояние одинаковое. Можно заметить, что и
+                            до
+                            следующего блока расстояние такое же.
+                        </figcaption>
+                        <img class="article__img" src="./assets/image/padding-header.jpg"
+                            alt="Пример списка с рецептами">
+                    </figure>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">В соответствии со вторым принципом: последний <i>margin</i>
+                            обнуляется, а
+                            нижний отступ задаётся
+                            через
+                            <i>padding</i>
+                            для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если
+                            расстояние
+                            между
+                            секциями
+                            100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.
+                        </figcaption>
+                        <img class="article__img" src="./assets/image/padding-list.jpg"
+                            alt="Визуальное отображение списка с рецептами через dev tools с margin">
+                        <img class="article__img article__img_no-margin" src="./assets/image/section.jpg"
+                            alt="html-код списка с рецептами">
+                        <img class="article__img" src="./assets/image/section2.jpg" alt="html-код списка с рецептами">
+                    </figure>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Для большего понимания рассмотрим другой пример, который часто
+                            встречается на практике:</figcaption>
+                        <img class="article__img" src="./assets/image/menu.jpg" alt="Пример меню">
+                        <img class="article__img" src="./assets/image/html-menu.jpg" alt="html-код меню">
+                    </figure>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Здесь нас интересует отступ между пунктами меню и списком с
+                            кнопкой
+                            поиска. Отступы между пунктами
+                            меню задаются так:</figcaption>
+                        <img class="article__img" src="./assets/image/margin-menu.jpg" alt="css-код отступа">
+                    </figure>
+                    <figure class="article__text-image-block">
+                        <figcaption class="article__text">Советую использовать псевдоклассы :last-child чаще других,
+                            например
+                            так:
+                        </figcaption>
+                        <img class="article__img" src="./assets/image/margin-menu-psevdo.jpg"
+                            alt="css-код отступа с помощью псевдоклассов">
+                    </figure>
                 </div>
-            </section>
-        </main>
-        <footer class="footer container2">
-            <div class="container2">
-                <h2 class="subtitle footer__subtitle">Подытожим:</h2>
-                <ul class="footer__list">
-                    <li class="footer__item">отступы задаём от предыдущего элемента к следующему</li>
-                    <li class="footer__item">используем только margin-right и margin-bottom</li>
-                    <li class="footer__item">внешние отступы задаются только между соседями</li>
-                    <li class="footer__item">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-                    <li class="footer__item">последнему элементу группы отступ всегда обнуляем</li>
-                </ul>
-                <p class="text footer__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда
-                    базовые принципы приходится
-                    нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо
-                    хорошо знать.</p>
-            </div>
-        </footer>
-    </div>
+            </article>
+        </section>
+        <section class="article__container2">
+            <h2 class="article__subtitle">Подытожим:</h2>
+            <ul class="article__list-footer">
+                <li class="article__item-footer">отступы задаём от предыдущего элемента к следующему</li>
+                <li class="article__item-footer">используем только margin-right и margin-bottom</li>
+                <li class="article__item-footer">внешние отступы задаются только между соседями</li>
+                <li class="article__item-footer">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+                <li class="article__item-footer">последнему элементу группы отступ всегда обнуляем</li>
+            </ul>
+            <p>Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда
+                базовые принципы приходится
+                нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо
+                хорошо знать.</p>
+        </section>
+    </article>
 </body>
 
 </html>
