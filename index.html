@@ -26,30 +26,30 @@
                 знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных
                 верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
         </div>
+        <section class="article__menu article__container-grey">
+            <h2 class="article__subtitle">Содержание:</h2>
+            <ol class="article__list">
+                <li class="article__item"><a class="article__text-item" href="#about-margin">Отступ задается от
+                        предыдущего
+                        элемента к следующему</a></li>
+                <li class="article__item"><a class="article__text-item" href="#margin-last">Отступ задается
+                        последнему
+                        возможному элементу в DOM-дереве</a></li>
+                <li class="article__item"><a class="article__text-item" href="#margin-reset">Для последнего элемента
+                        группы
+                        отступ обнуляется</a></li>
+            </ol>
+        </section>
         <section>
-            <nav class="article__menu article__container-grey">
-                <h2 class="article__subtitle">Содержание:</h2>
-                <ol class="article__list">
-                    <li class="article__item"><a class="article__text-item" href="#about-margin">Отступ задается от
-                            предыдущего
-                            элемента к следующему</a></li>
-                    <li class="article__item"><a class="article__text-item" href="#margin-last">Отступ задается
-                            последнему
-                            возможному элементу в DOM-дереве</a></li>
-                    <li class="article__item"><a class="article__text-item" href="#margin-reset">Для последнего элемента
-                            группы
-                            отступ обнуляется</a></li>
-                </ol>
-            </nav>
             <article class="article__paragraph" id="about-margin">
                 <div class="article__container">
                     <h3 class="article__subtitle-mini">Отступ задается от предыдущего элемента к следующему: от
                         первого ко второму, сверху вниз, слева направо.
                     </h3>
                     <figure class="article__text-image-block">
-                        <img class="article__img-block article__block_inline article__block_margin-right"
+                        <img class="article__img-block article__img-block_inline article__img-block_margin-right"
                             src="./assets/image/margin.jpg" alt="Пример правильных margin">
-                        <figcaption class="article__text-block article__block_inline">
+                        <figcaption class="article__text-block article__text-block_inline">
                             <p class="article__text"><strong>ВАЖНО:</strong> margin всегда задают от предыдущего
                                 элемента
                                 к следующему.</p>
@@ -67,7 +67,8 @@
                         </figcaption>
                     </figure>
                     <figure>
-                        <figcaption class="article__text-block article__block_inline article__block_margin-right">
+                        <figcaption
+                            class="article__text-block article__text-block_inline article__text-block_margin-right">
                             <p class="article__text">Отступ внутри блока сверху или слева реализуется через
                                 <i>padding-top</i> и <i>padding-left</i>
                                 родителя.
@@ -83,7 +84,7 @@
                                 других
                                 блоков или свойств родителя.</p>
                         </figcaption>
-                        <img class="article__img-block article__block_inline" src="./assets/image/padding.jpg"
+                        <img class="article__img-block article__img-block_inline" src="./assets/image/padding.jpg"
                             alt="Пример padding">
                     </figure>
                 </div>
@@ -102,9 +103,9 @@
                     </figure>
                     <p class="article__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
                     <figure class="article__text-image-block article__block">
-                        <img class="article__img_margin" src="./assets/image/list-dev-tools.jpg"
+                        <img class="article__img" src="./assets/image/list-dev-tools.jpg"
                             alt="Отображение списка и кола в DevTools">
-                        <figcaption class="article__text_grey article__text_margins">
+                        <figcaption class="article__text-grey article__text-grey_margins">
                             <b>ВАЖНО:</b> здесь <em>.list-item</em> — последний возможный элемент в котором мы
                             задаём
                             отступ, чтобы разделить списки.

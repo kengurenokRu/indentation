@@ -65,12 +65,14 @@
   max-width: 480px;
 }
 
-.article__block_inline {
+.article__img-block_inline,
+.article__text-block_inline {
   display: inline-block;
   vertical-align: text-top;
 }
 
-.article__block_margin-right {
+.article__img-block_margin-right,
+.article__text-block_margin-right {
   margin-right: 30px;
 }
 
@@ -105,19 +107,19 @@
   margin-bottom: 0;
 }
 
-.article__img_margin {
+.article__block .article__img {
   margin-bottom: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.article__text_grey {
+.article__text-grey {
   color: #5e5e5e;
 }
 
-.article__text_margins {
+.article__text-grey_margins {
   margin-bottom: 15px;
-  padding-left: 15px;
+  padding-left: 30px;
 }
 
 .article__list-footer {
