@@ -50,6 +50,7 @@
 .article__text-item,
 .article__item {
   color: #02535f;
+  text-underline-offset: 5px;
 }
 
 .article__list {
